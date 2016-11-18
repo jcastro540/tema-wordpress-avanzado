@@ -1,0 +1,97 @@
+/*FUENTES*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,600');
+
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;*/
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+p{
+	font-weight: 300;
+	color: #34495e;
+}
+
+h1 {
+	color: rgba(52, 73, 94,1.0);
+}
+
+/*HEADER*/
+
+.logo {
+	width: 45px;
+	height: auto;
+}
+
+.navbar-brand {
+	margin-top: -15px;
+}
+
+
+.header-post {
+	width: 100%;
+	height: 450px;
+	background-size: cover;
+	position: relative;
+}
+
+.post-title {
+	position: absolute;
+	top:0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(52, 73, 94,.5);
+	transition: all 350ms ease;
+}
+
+.header-post .post-title h2{
+	margin-top: 35vh;
+}
+
+.header-post .post-title h2 a{
+	color: whitesmoke;
+	text-transform: uppercase;
+	text-shadow: 1px 2px 2px #2c3e50;
+	font-size: 1.6em;
+	font-weight: bold;
+	transition: all 350ms ease;
+}
+
+.header-post .post-title h2 a:hover{
+	text-decoration: none;
+}
+
+.header-post:hover .post-title{
+	background-color: rgba(52, 73, 94,.8);
+	cursor: pointer;
+}
+
+.header-post:hover .post-title h2 a {
+	color: #3498db;
+	text-shadow: 2px 3px 2px #2c3e50;
+}
+
+/*SINGLE*/
+.header-post.subir{
+	top: -20px;
+	background-attachment: fixed;
+}
+
+.mt40{
+	margin-top: 40px;
+}
+
+/*CARRUSEL*/
+.item {
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
