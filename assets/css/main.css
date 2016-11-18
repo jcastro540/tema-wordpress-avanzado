@@ -95,3 +95,21 @@ h1 {
 	background-position: center center;
 	background-attachment: fixed;
 }
+
+.carousel-caption{
+	bottom: 35%;
+}
+
+/*SECCION DE NOSOTROS*/
+.about{
+	margin: 30px 0 0px 0;
+	padding: 0;
+}
+
+.header-line{
+	width: 50px;
+	border-top: 4px solid #7f8c8d;
+	border-bottom: 1px solid rgba(149, 165, 166,.4);	
+	float: left;
+
+}

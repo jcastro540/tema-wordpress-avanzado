@@ -98,16 +98,103 @@
 		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 
 			'curso_slide1',
 			array(
-					'label'=> __('Primera image', 'jac'),
-					'section'=> 'curso_slide_section',
-					'settings' => 'curso_slide1',
-					'context'=> 'Mi context'
-				)
-			));
+				'label'=> __('Primera image', 'jac'),
+				'section'=> 'curso_slide_section',
+				'settings' => 'curso_slide1',
+				'context'=> 'Mi context'
+			)
+		));
 
+		// Segunda imagen
+		$wp_customize->add_setting('curso_slide2',array(
+			'default'=> get_template_directory_uri().'/assets/img/slide2.jpg'
+		));
 
+		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 
+			'curso_slide2',
+			array(
+				'label'=> __('Segunda image', 'jac'),
+				'section'=> 'curso_slide_section',
+				'settings' => 'curso_slide2',
+				'context'=> 'Mi context'
+			)
+		));
 
+		// Tercera imagen
+		$wp_customize->add_setting('curso_slide3',array(
+			'default'=> get_template_directory_uri().'/assets/img/slide3.jpg'
+		));
 
+		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 
+			'curso_slide3',
+			array(
+				'label'=> __('Tercera image', 'jac'),
+				'section'=> 'curso_slide_section',
+				'settings' => 'curso_slide3',
+				'context'=> 'Mi context'
+			)
+		));
+
+		// CONTENIDO DEL SLIDER
+		//primer Slide
+
+		$wp_customize->add_setting('curso_texto_slide1',array(
+			'default'=> 'Texto del primer Slide'
+		));
+
+		$wp_customize->add_control(new WP_Customize_Control($wp_customize, 
+			'curso_texto_slide1',
+			array(
+				'label'=> __('Texto del primer slide', 'jac'),
+				'section'=> 'curso_slide_section',
+				'settings' => 'curso_texto_slide1',
+				'context'=> 'Mi context'
+			)
+		));
+		//Enlace
+		$wp_customize->add_setting('curso_enlace_slide1',array(
+			'default'=> 'http://josecastro.com.ve'
+		));
+
+		$wp_customize->add_control(new WP_Customize_Control($wp_customize, 
+			'curso_enlace_slide1',
+			array(
+				'label'=> __('Enlace del primer boton', 'jac'),
+				'section'=> 'curso_slide_section',
+				'settings' => 'curso_enlace_slide1',
+				'context'=> 'Mi context'
+			)
+		));
+
+		//Segundo Slide
+		$wp_customize->add_setting('curso_texto_slide2',array(
+			'default'=> 'Texto del segundo Slide'
+		));
+
+		$wp_customize->add_control(new WP_Customize_Control($wp_customize, 
+			'curso_texto_slide2',
+			array(
+				'label'=> __('Texto del segundo slide', 'jac'),
+				'section'=> 'curso_slide_section',
+				'settings' => 'curso_texto_slide2',
+				'context'=> 'Mi context'
+			)
+		));
+
+		//Tercer Slide
+		$wp_customize->add_setting('curso_texto_slide3',array(
+			'default'=> 'Texto del tercer Slide'
+		));
+
+		$wp_customize->add_control(new WP_Customize_Control($wp_customize, 
+			'curso_texto_slide3',
+			array(
+				'label'=> __('Texto del tercer slide', 'jac'),
+				'section'=> 'curso_slide_section',
+				'settings' => 'curso_texto_slide3',
+				'context'=> 'Mi context'
+			)
+		));
 
 	}
 
