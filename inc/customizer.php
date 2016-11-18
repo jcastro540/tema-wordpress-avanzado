@@ -196,6 +196,43 @@
 			)
 		));
 
+		// SECCION DE NOSOTROS
+		$wp_customize->add_section('curso_landing_nosotros', array(
+				'title' => __('Nosotros','jac'),
+				'description' => 'Personalizar la sección de Nostros',
+				'priority' => 46,
+				'panel' => 'landing'
+			));
+			// PRIMER BLOQUE
+		$wp_customize->add_setting('nosotros_img1',array(
+			'default'=> 'http://placehold.it/480x480'
+		));
+
+		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 
+			'nosotros_img1',
+			array(
+				'label'=> __('Primera Imagen', 'jac'),
+				'section'=> 'curso_landing_nosotros',
+				'settings' => 'nosotros_img1',
+				'context'=> 'Mi context'
+			)
+		));
+		// titulo del primer bloque
+		$wp_customize->add_setting('nosotros_titulo1',array(
+			'default'=> 'Carlota'
+		));
+
+		$wp_customize->add_control(new WP_Customize_Control($wp_customize, 
+			'nosotros_titulo1',
+			array(
+				'label'=> __('Primer Titulo', 'jac'),
+				'section'=> 'curso_landing_nosotros',
+				'settings' => 'nosotros_titulo1',
+				'context'=> 'Mi context'
+			)
+		));
+
+
 	}
 
 

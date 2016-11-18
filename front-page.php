@@ -56,18 +56,90 @@ get_header();
 	
 	<div class="row">
 		<article class="col-md-4">
-			<div class="img-nosotros" style="background-image: url(http://placehold.it/300x300);">
+			<div class="img-nosotros" style="background-image: url(<?php echo get_theme_mod('nosotros_img1');?>);">
 				<div class="social">
-					<ul class="list-inline">
-						<li><a href=""></a></li>
-						<li><a href=""></a></li>
-						<li><a href=""></a></li>
+					<ul class="list-inline text-center social-net">
+						<li>
+							<a href="" class="btn btn-info btn-social">
+								<i class="fa fa-2x fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="" class="btn btn-info btn-social">
+								<i class="fa fa-2x fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="" class="btn btn-info btn-social">
+								<i class="fa fa-2x fa-instagram"></i>
+							</a>
+						</li>
 					</ul>
 				</div>
 			</div>
+			<h3><?php echo get_theme_mod('nosotros_titulo1');?></h3>
+			<p>Bio</p>
+			<hr class="header-line">
+			<div class="clearfix"></div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et asperiores adipisci voluptas porro aperiam fugiat cupiditate deleniti explicabo eveniet possimus.</p>
+			
 		</article>
-		<article class="col-md-4"></article>
-		<article class="col-md-4"></article>
+		<article class="col-md-4">
+			<div class="img-nosotros" style="background-image: url(http://placehold.it/300x300);">
+				<div class="social">
+					<ul class="list-inline text-center social-net">
+						<li>
+							<a href="" class="btn btn-info btn-social">
+								<i class="fa fa-2x fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="" class="btn btn-info btn-social">
+								<i class="fa fa-2x fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="" class="btn btn-info btn-social">
+								<i class="fa fa-2x fa-instagram"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<h3>Titulo</h3>
+			<p>Bio</p>
+			<hr class="header-line">
+			<div class="clearfix"></div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et asperiores adipisci voluptas porro aperiam fugiat cupiditate deleniti explicabo eveniet possimus.</p>
+		</article>
+		<article class="col-md-4">
+			<div class="img-nosotros" style="background-image: url(http://placehold.it/300x300);">
+				<div class="social">
+					<ul class="list-inline text-center social-net">
+						<li>
+							<a href="" class="btn btn-info btn-social">
+								<i class="fa fa-2x fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="" class="btn btn-info btn-social">
+								<i class="fa fa-2x fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="" class="btn btn-info btn-social">
+								<i class="fa fa-2x fa-instagram"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<h3>Titulo</h3>
+			<p>Bio</p>
+			<hr class="header-line">
+			<div class="clearfix"></div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et asperiores adipisci voluptas porro aperiam fugiat cupiditate deleniti explicabo eveniet possimus.</p>
+		</article>
 	</div>
 </section>
 

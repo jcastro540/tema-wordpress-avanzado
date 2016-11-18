@@ -7,6 +7,8 @@
 
 	<?php wp_head(); ?>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<!-- fontawesome -->
+	<script src="https://use.fontawesome.com/4779d3d6f8.js"></script>
 </head>
 <body>
 	<header>
