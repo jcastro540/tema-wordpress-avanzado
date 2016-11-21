@@ -232,6 +232,37 @@
 			)
 		));
 
+		// parrafo del primer bloque
+		$wp_customize->add_setting('nosotros_parrafo1',array(
+			'default'=> 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit beatae similique laborum doloribus, aliquid provident!'
+		));
+
+		$wp_customize->add_control(new WP_Customize_Control($wp_customize, 
+			'nosotros_parrafo1',
+			array(
+				'label'=> __('Primer Parrafo', 'jac'),
+				'section'=> 'curso_landing_nosotros',
+				'settings' => 'nosotros_parrafo1',
+				'type'       => 'textarea',
+				'context'=> 'Mi context'
+			)
+		));
+
+		// primer icono del primer bloque
+		$wp_customize->add_setting('nosotros_icono1',array(
+			'default'=> 'fa-facebook'
+		));
+
+		$wp_customize->add_control(new WP_Customize_Control($wp_customize, 
+			'nosotros_icono1',
+			array(
+				'label'=> __('Primer icono', 'jac'),
+				'section'=> 'curso_landing_nosotros',
+				'settings' => 'nosotros_icono1',
+				'context'=> 'Mi context'
+			)
+		));
+
 
 	}
 

@@ -81,7 +81,7 @@ get_header();
 			<p>Bio</p>
 			<hr class="header-line">
 			<div class="clearfix"></div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et asperiores adipisci voluptas porro aperiam fugiat cupiditate deleniti explicabo eveniet possimus.</p>
+			<p><?php echo get_theme_mod('nosotros_parrafo1');?></p>
 			
 		</article>
 		<article class="col-md-4">
@@ -90,7 +90,7 @@ get_header();
 					<ul class="list-inline text-center social-net">
 						<li>
 							<a href="" class="btn btn-info btn-social">
-								<i class="fa fa-2x fa-facebook"></i>
+								<i class="fa fa-2x <?php echo get_theme_mod('nosotros_icono1');?>"></i>
 							</a>
 						</li>
 						<li>
