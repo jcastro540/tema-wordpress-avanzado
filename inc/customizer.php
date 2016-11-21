@@ -259,11 +259,32 @@
 				'label'=> __('Primer icono', 'jac'),
 				'section'=> 'curso_landing_nosotros',
 				'settings' => 'nosotros_icono1',
+				'type'    => 'select',
+				'choices'=> array(
+					'fa-facebook' => 'fa-facebook',
+            		'fa-twitter' => 'fa-twitter',
+            		'fa-instagram' => 'fa-instagram'
+
+					),
+
 				'context'=> 'Mi context'
 			)
 		));
 
+		// primer enlace del primer bloque
+		$wp_customize->add_setting('nosotros_enlace_icono1',array(
+			'default'=> 'http://facebook.com'
+		));
 
+		$wp_customize->add_control(new WP_Customize_Control($wp_customize, 
+			'nosotros_enlace_icono1',
+			array(
+				'label'=> __('Enlace del primer icono', 'jac'),
+				'section'=> 'curso_landing_nosotros',
+				'settings' => 'nosotros_enlace_icono1',
+				'context'=> 'Mi context'
+			)
+		));
 	}
 
 

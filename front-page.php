@@ -60,8 +60,8 @@ get_header();
 				<div class="social">
 					<ul class="list-inline text-center social-net">
 						<li>
-							<a href="" class="btn btn-info btn-social">
-								<i class="fa fa-2x fa-facebook"></i>
+							<a href="<?php echo get_theme_mod('nosotros_enlace_icono1');?>" class="btn btn-info btn-social" target="_blank">
+								<i class="fa fa-2x <?php echo get_theme_mod('nosotros_icono1');?>"></i>
 							</a>
 						</li>
 						<li>
@@ -90,7 +90,7 @@ get_header();
 					<ul class="list-inline text-center social-net">
 						<li>
 							<a href="" class="btn btn-info btn-social">
-								<i class="fa fa-2x <?php echo get_theme_mod('nosotros_icono1');?>"></i>
+								<i class="fa fa-2x fa-facebook"></i>
 							</a>
 						</li>
 						<li>
@@ -141,6 +141,46 @@ get_header();
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et asperiores adipisci voluptas porro aperiam fugiat cupiditate deleniti explicabo eveniet possimus.</p>
 		</article>
 	</div>
+</section>
+
+<section class="container">
+	<h2 class="about">Productos</h2>
+	<hr class="header-line">
+	<div class="clearfix"></div>
+	
+	<div class="row">
+		<?php 
+			$args = array('post_type'=>'productos','posts_per_page'=>4);
+			$loop = new WP_Query($args);
+
+			while($loop->have_posts()):$loop->the_post();
+			echo '<article class="col-md-3">';
+				echo '<div class="producto">';
+				//imagen del producto
+					the_post_thumbnail('full', array('class'=>'img-responsive'));
+				// el titulo del producto
+					echo '<a href="';
+					the_permalink();
+					echo '">';
+						echo '<h4 class="text-center">';
+								the_title();
+						echo '</h4>';
+					echo '</a>';
+
+					echo '<span class="text-center">';
+							the_excerpt();
+					echo '</span>';
+				echo '</div>';
+			echo '</article>';
+
+			endwhile;
+
+		 ?>
+
+
+	</div>
+
+
 </section>
 
 <?php get_footer(); ?>
