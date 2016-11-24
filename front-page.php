@@ -179,8 +179,22 @@ get_header();
 
 
 	</div>
+</section>
+
+<section class="contacto" style="background-image: url(<?php echo get_theme_mod('curso_contacto_fondo');?>);">
+	<article class="container">
+		<h2 class="">Contacto</h2>
+		<hr class="header-line">
+		<div class="clearfix"></div>
+		<!-- Formulario -->
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<?php echo do_shortcode(get_theme_mod('curso_contacto_form')); ?>						
+			</div>
+		</div>
 
 
+	</article>
 </section>
 
 <?php get_footer(); ?>

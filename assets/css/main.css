@@ -159,3 +159,27 @@ h1 {
 	background-color: rgba(189, 195, 199,.3);
 }
 
+.contacto {
+	width: 100%;
+	height: 500px;
+	margin-top: 50px;
+	padding: 20px 0;
+	box-sizing: border-box;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.contacto h2{color: whitesmoke;}
+
+.form-group p{
+	color: whitesmoke;
+	font-weight: bold;
+}
+
+.form-control{
+	border-radius: 0;
+	background-color: rgba(52, 73, 94,.5);
+	border-color: rgba(52, 73, 94, 1);
+	color: whitesmoke;
+}

@@ -285,6 +285,44 @@
 				'context'=> 'Mi context'
 			)
 		));
+
+		// CONTACTO
+		$wp_customize->add_section('curso_contacto_section',array(
+			'title'=> __('Contacto','jac'),
+			'description' => 'Modificar opciones de contacto',
+			'priority' => 47,
+			'panel'=>'landing'
+		));
+		// imagen de fondo
+		$wp_customize->add_setting('curso_contacto_fondo',array(
+			'default'=> get_template_directory_uri().'/assets/img/bg2.jpg'
+		));
+
+		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 
+			'curso_contacto_fondo',
+			array(
+				'label'=> __('Fondo del Contacto', 'jac'),
+				'section'=> 'curso_contacto_section',
+				'settings' => 'curso_contacto_fondo',
+				'context'=> 'Mi context'
+			)
+		));
+
+		// formulario de contacto
+		$wp_customize->add_setting('curso_contacto_form',array(
+			'default'=> 'Inserte en codigo del formulario'
+		));
+
+		$wp_customize->add_control(new WP_Customize_Control($wp_customize, 
+			'curso_contacto_form',
+			array(
+				'label'=> __('Formulario de contacto', 'jac'),
+				'section'=> 'curso_contacto_section',
+				'settings' => 'curso_contacto_form',
+				'context'=> 'Mi context'
+			)
+		));
+
 	}
 
 
