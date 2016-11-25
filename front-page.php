@@ -197,4 +197,20 @@ get_header();
 	</article>
 </section>
 
+<section class="mapa">
+	
+	
+	<div class="mapa-content">
+		<?php echo do_shortcode(get_theme_mod('curso_contacto_mapa')); ?>
+	<article class="titulo-mapa">
+		<h2 class="">Ubícanos</h2>
+		<!-- <hr class="header-line"> -->
+		<div class="clearfix"></div>
+	</article>
+	</div>
+
+			
+
+</section>
+
 <?php get_footer(); ?>

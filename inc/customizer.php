@@ -323,6 +323,21 @@
 			)
 		));
 
+		// mapa
+		$wp_customize->add_setting('curso_contacto_mapa',array(
+			'default'=> 'Inserte en codigo del mapa'
+		));
+
+		$wp_customize->add_control(new WP_Customize_Control($wp_customize, 
+			'curso_contacto_mapa',
+			array(
+				'label'=> __('Mapa de ubicación', 'jac'),
+				'section'=> 'curso_contacto_section',
+				'settings' => 'curso_contacto_mapa',
+				'context'=> 'Mi context'
+			)
+		));
+
 	}
 
 

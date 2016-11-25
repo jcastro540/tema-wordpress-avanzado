@@ -183,3 +183,26 @@ h1 {
 	border-color: rgba(52, 73, 94, 1);
 	color: whitesmoke;
 }
+
+div.wpcf7-mail-sent-ng{display: none!important;}
+
+.mapa{
+	position: relative;
+}
+
+.mapa-content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 450px;
+}
+
+.titulo-mapa {
+	position: absolute;
+	width: 100%;
+	top: 30px;
+	left: 0;
+	text-align: center;
+
+}
