@@ -191,9 +191,7 @@ div.wpcf7-mail-sent-ng{display: none!important;}
 }
 
 .mapa-content{
-	position: absolute;
-	top: 0;
-	left: 0;
+	
 	width: 100%;
 	height: 450px;
 }
@@ -204,5 +202,31 @@ div.wpcf7-mail-sent-ng{display: none!important;}
 	top: 30px;
 	left: 0;
 	text-align: center;
+}
 
+.error-404{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/slide1.jpg);
+}
+
+.mensajes{
+	width: 100%;
+	text-align: center;
+
+}
+
+.mensajes h1{
+	position: relative;
+	top: 28vh;
+	font-size: 8em;
+	color: #2c3e50;
+	text-shadow: 2px 2px 2px black;
+}
+
+.mensajes h2 {
+	color: #2c3e50;
+	text-transform: uppercase;
+	position: relative;
+	top: 30vh;
 }
